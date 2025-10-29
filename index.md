@@ -17,7 +17,7 @@ title: Inicio
 <ul style="list-style:none; padding-left:0;">
 {% for post in site.posts %}
   <li style="margin-bottom:20px;">
-    <a href="{{ post.url }}" style="font-size:18px; font-weight:600;">{{ post.title }}</a>
+    <a href="{{ site.baseurl }}{{ post.url }}" style="font-size:18px; font-weight:600;">{{ post.title }}</a>
     <br>
     <span style="color:#777;">Publicado el {{ post.date | date: "%Y-%m-%d" }}</span>
   </li>

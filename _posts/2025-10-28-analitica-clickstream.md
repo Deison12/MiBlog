@@ -52,3 +52,7 @@ Coloca aquí la imagen exportada:
 
 ## Cierre
 Este post se actualizará con los resultados y la gráfica del análisis (Pasos 2–4).
+<div style="text-align:center;">
+  <img src="{{ site.baseurl }}/assets/grafico_clicks.png" alt="Gráfico de clics por usuario" width="80%">
+</div>
+

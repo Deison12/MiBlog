@@ -4,6 +4,7 @@ title: Posts
 ---
 
 {% include nav.html %}
+
 <link rel="stylesheet" href="/assets/style.css">
 
 # Publicaciones
@@ -19,14 +20,11 @@ title: Posts
       background-color: #fff;
     ">
     <h3 style="margin-top:0;">
-      <a href="{{ post.url }}" style="color: #0d6efd; text-decoration: none;">{{ post.title }}</a>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+" style="color: #0d6efd; text-decoration: none;">{{ post.title }}</a>
     </h3>
     <p style="color:#777; font-size: 14px;">{{ post.date | date: "%Y-%m-%d" }}</p>
     <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
   </div>
   {% endfor %}
 </div>
-<div style="text-align:center;">
-  <img src="{{ site.baseurl }}/assets/grafico_clicks.png" alt="Gráfico de clics por usuario" width="80%">
-</div>
-
