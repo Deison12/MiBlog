@@ -26,3 +26,7 @@ title: Posts
   </div>
   {% endfor %}
 </div>
+<div style="text-align:center;">
+  <img src="{{ site.baseurl }}/assets/grafico_clicks.png" alt="Gráfico de clics por usuario" width="80%">
+</div>
+
