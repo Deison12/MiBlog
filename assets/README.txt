@@ -1,0 +1,1 @@
+Coloca aquí tus imágenes (por ejemplo, grafico_clicks.png).
