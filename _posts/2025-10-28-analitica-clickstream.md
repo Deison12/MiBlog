@@ -122,7 +122,7 @@ pdf = top.toPandas()
 pdf
 ```
 {% endraw %}
-
+### Gráfico de Barras para Representar la Actividad de Usuarios en el Clickstream
 {% raw %}
 ```python
 import matplotlib.pyplot as plt
@@ -138,7 +138,8 @@ plt.savefig('grafico_clicks.png', dpi=160)
 plt.show()
 ```
 {% endraw %}
-
+### Descarga Local del Gráfico Generado desde Google Colab
+{% raw %}
 {% raw %}
 ```python
 from google.colab import files
