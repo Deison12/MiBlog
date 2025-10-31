@@ -139,7 +139,7 @@ plt.show()
 ```
 {% endraw %}
 ### Descarga Local del Gráfico Generado desde Google Colab
-{% raw %}
+
 {% raw %}
 ```python
 from google.colab import files
