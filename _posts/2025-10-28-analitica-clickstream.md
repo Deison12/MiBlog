@@ -80,7 +80,7 @@ pd.DataFrame({"Timestamp": timestamps, "User_ID": user_ids, "Clicks": clicks}) \
 pd.read_csv("clicks.csv").head()
 ```
 {% endraw %}
-
+### Carga del Dataset Clickstream en PySpark y Conversión del Timestamp
 {% raw %}
 ```python
 from pyspark.sql.functions import to_timestamp, col
@@ -94,7 +94,7 @@ df.printSchema()
 df.show(5, truncate=False)
 ```
 {% endraw %}
-
+### Cálculo de Actividad por Usuario Mediante Ventanas Temporales de 1 Minuto en PySpark
 {% raw %}
 ```python
 from pyspark.sql.functions import window, sum as ssum
@@ -105,7 +105,7 @@ agg = (df.groupBy("User_ID", window(col("ts"), "1 minute"))
 agg.show(10, truncate=False)
 ```
 {% endraw %}
-
+### Cálculo del Top 10 de Usuarios con Mayor Actividad y Exportación a Pandas
 {% raw %}
 ```python
 from pyspark.sql.functions import desc, sum as ssum
