@@ -55,8 +55,10 @@ spark  # devuelve info de la sesión
 ```
 {% endraw %}
 
+### Generación de un Dataset Sintético de Eventos Clickstream para 30 Usuarios
 {% raw %}
 ```python
+
 import pandas as pd, numpy as np, datetime as dt
 
 # Dataset sintético: 2000 eventos entre 20:00 y 22:00 para 30 usuarios
